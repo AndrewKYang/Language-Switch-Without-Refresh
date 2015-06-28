@@ -1,0 +1,29 @@
+<!--This is a basic test for switching between different languages without refreshing the entire page. More advanced tests(including media queries) to come. @AndrewKYang-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Test for 1 click language changes</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<!--Switch the class="" to whichever language you want to be initially displayed. Otherwise, both languages will be displayed at the same time.-->
+
+<body class="en">
+    <header>
+        <div>
+            <h1 lang="en">This is a test for 1 click language changes.</h1>
+            <h1 lang="zh">这是一个演示更改语言</h1></div>
+    </header>
+    <div class="main">
+        <p href="" lang="en">This is in English.</p>
+        <p lang="zh">这是中文</p>
+    </div>
+    <!--Buttons to switch between English and Chinese-->
+    <div>
+        <button onclick="document.body.className='en'">Click to switch to English.</button>
+        <button onclick="document.body.className='zh'">点击切换到中文</button>
+    </div>
+</body>
+
+</html>

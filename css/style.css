@@ -1,0 +1,9 @@
+/*Multiple languages coming soon. @AndrewKYang*/
+
+body.zh:lang(en) {
+    display: none;
+}
+
+body.en:lang(zh) {
+    display: none;
+}

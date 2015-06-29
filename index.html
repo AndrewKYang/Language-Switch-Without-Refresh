@@ -6,23 +6,35 @@
     <meta charset="UTF-8">
     <title>Test for 1 click language changes</title>
     <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 <!--Switch the class="" to whichever language you want to be initially displayed. Otherwise, both languages will be displayed at the same time.-->
 
 <body class="en">
     <header>
-        <div>
-            <h1 lang="en">This is a test for 1 click language changes.</h1>
-            <h1 lang="zh">这是一个演示更改语言</h1></div>
+        <div class="container-fluid">
+            <h1 lang="en">This is a test for 1 click language changes<small lang="en"> Built in Bootstrap HTML5, CSS3, and Javascript</small></h1>
+            <h1 lang="zh">这是一个演示更改语言 <small lang="zh">网站是建立与引导HTML5，CSS3和JavaScript</small></h1>
+            <h1 lang="es">Esto es una demostración para cambiar el idioma <small lang="es">Construido en Bootstrap HTML5, CSS3 y Javascript</small></h1></div>
     </header>
-    <div class="main">
+    <div class="main, container-fluid">
         <p href="" lang="en">This is in English.</p>
         <p lang="zh">这是中文</p>
+        <p lang="es">Esta frase está escrita en español</p>
     </div>
-    <!--Buttons to switch between English and Chinese-->
-    <div>
-        <button onclick="document.body.className='en'">Click to switch to English.</button>
-        <button onclick="document.body.className='zh'">点击切换到中文</button>
+    <!--Buttons to switch between English, Chinese, and now in Spanish-->
+    <div class="container-fluid">
+        <button type="button" class="btn" onclick="document.body.className='en'">Click to switch to English.</button>
+        <button type="button" class="btn" onclick="document.body.className='zh'">点击切换到中文</button>
+        <button type="button" class="btn" onclick="document.body.className='es'">Haga clic para cambiar a español</button>
     </div>
 </body>
 

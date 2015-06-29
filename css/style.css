@@ -1,9 +1,17 @@
 /*Multiple languages coming soon. @AndrewKYang*/
 
-body.zh:lang(en) {
+body:not(.zh) :lang(zh){
     display: none;
 }
 
-body.en:lang(zh) {
+body:not(.en) :lang(en){
     display: none;
+}
+
+body:not(.es) :lang(es){
+    display: none;
+}
+
+h1, h2, h3 small {
+    display: block;
 }
